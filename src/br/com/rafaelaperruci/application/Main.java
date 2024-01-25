@@ -3,7 +3,11 @@ package br.com.rafaelaperruci.application;
 import br.com.rafaelaperruci.boardgame.Board;
 import br.com.rafaelaperruci.boardgame.Position;
 import br.com.rafaelaperruci.chess.ChessMatch;
+import br.com.rafaelaperruci.chess.ChessPiece;
+import br.com.rafaelaperruci.chess.ChessPosition;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -11,8 +15,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         ChessMatch chessMatch = new ChessMatch();
-        UI.printBoard(chessMatch.getPieces());
+        List<ChessPiece> captured= new ArrayList<>();
 
+        
 
     }
 }
