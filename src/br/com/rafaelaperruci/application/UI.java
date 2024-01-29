@@ -1,5 +1,6 @@
 package br.com.rafaelaperruci.application;
 
+import br.com.rafaelaperruci.chess.ChessMatch;
 import br.com.rafaelaperruci.chess.ChessPiece;
 import br.com.rafaelaperruci.chess.ChessPosition;
 import br.com.rafaelaperruci.chess.Color;
@@ -44,6 +45,12 @@ public class UI {
         catch (RuntimeException e) {
             throw new InputMismatchException("Error reading ChessPosition. Valid values are from a1 to h8.");
         }
+    }
+    public  static void printMatch(ChessMatch chessMatch){
+        printBoard(chessMatch.getPieces());
+        System.out.println();
+        System.out.println("Turn: " + chessMatch.getTurn());
+        System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
     }
     public static void printBoard(ChessPiece[][] pieces){
 
