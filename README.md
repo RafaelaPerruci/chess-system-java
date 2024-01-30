@@ -3,8 +3,8 @@ Projeto construído com o objetivo de praticar os conhecimentos adquiridos em Ja
 
 *Curso Nélio Alves - Plataforma Udemy*
 
-Este jogo foi desenvolvido utilizando a arquitetura de camadas, uma de 
-tabuleiro simples contendo apenas a matriz de tabuleiro, peças e posições e a segunda
+Este jogo foi desenvolvido utilizando a arquitetura de camadas(layer patterns), uma de 
+tabuleiro simples contendo apenas a matriz de tabuleiro, peças e posições genéricas e a segunda
 camada correspondendo ao tabuleiro de xarez contendo suas peças e posições
 específicas. Sua lógica básica é a conversão de uma posição do tabuleiro de xadrex,
 informada pelo jogador e posicionada na posição correspondente da matriz.
